@@ -15,12 +15,23 @@ public class JSnack1 {
 		int sum = 0;
 		int[] numbers;
 		numbers = new int[5];
+
+//		VERSIONE FOR		
+//		for (int i = 0; i < 5; i++) {
+//			System.out.print("Inserisci il " + (i+1) + "° numero: ");
+//			int input = scan.nextInt();
+//			numbers[i] = input;
+//			sum = sum + input;
+//		}
 		
-		for (int i = 0; i < 5; i++) {
-			System.out.print("Inserisci il " + (i+1) + "° numero: ");
+//		VERSIONE WHILE
+		int counter = 0;
+		while (counter < 5) {
+			System.out.print("Inserisci il " + (counter+1) + "° numero: ");
 			int input = scan.nextInt();
-			numbers[i] = input;
+			numbers[counter] = input;
 			sum = sum + input;
+			counter++;
 		}
 		
 		System.out.println("Hai scelto i numeri: " + numbers[0] + "; " + numbers[1] + "; " + numbers[2] + "; " + numbers[3] + "; " + numbers[4] + "; " );
